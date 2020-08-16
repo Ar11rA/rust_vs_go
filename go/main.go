@@ -13,7 +13,7 @@ func main() {
 	extraCandies := 3
 	log.Println("Extra candies problem", problems.KidsWithCandies(candies, extraCandies))
 
-	inputStr:= "codeleet"
+	inputStr := "codeleet"
 	indices := []int{4, 5, 6, 7, 0, 2, 1, 3}
 	log.Println("Shuffle string problem", problems.RestoreString(inputStr, indices))
 
@@ -25,5 +25,12 @@ func main() {
 		Left:  nil,
 		Right: nil,
 	}
-	log.Println("BST range sum problem", problems.RangeSumBST(&tree, 1, 10));
+	log.Println("BST range sum problem", problems.RangeSumBST(&tree, 1, 10))
+
+	startTime := []int{1, 2, 3}
+	endTime := []int{3, 2, 7}
+	log.Println("Homework at query time problem", problems.BusyStudent(startTime, endTime, 4))
+
+	arr := []int{1, 2, 2, 1, 1, 3}
+	log.Println("Unique number of occurances", problems.UniqueOccurrences(arr))
 }

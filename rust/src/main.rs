@@ -25,4 +25,11 @@ fn main() {
         right: None,
     })));
     println!("BST range sum problem: {}", problems::bst_range_sum::range_sum_bst(tree, 1, 10));
+
+    let start_time: Vec<i32> = vec![1, 2, 3];
+    let end_time: Vec<i32> = vec![3, 2, 7];
+    println!("Homework at query time problem: {}", problems::homework_at_given_time::busy_student(start_time, end_time, 4));
+
+    let arr: Vec<i32> = vec![1, 2, 2, 1, 1, 3];
+    println!("Unique number of occurances: {}", problems::unique_number_of_occurances::unique_occurrences(arr))
 }
