@@ -5,3 +5,6 @@ pub mod product_minus_sum;
 pub mod bst_range_sum;
 pub mod homework_at_given_time;
 pub mod unique_number_of_occurances;
+pub mod letter_tile_possibilties;
+pub mod search_insert_position;
+pub mod simple_is_subsequence;

@@ -3,7 +3,6 @@ use std::cell::RefCell;
 
 mod problems;
 
-
 fn main() {
     let nums: Vec<i32> = vec![1, 2, 3, 4];
     println!("Running sum problem: {:?}", problems::running_sum_of_array::running_sum(nums));
@@ -31,5 +30,15 @@ fn main() {
     println!("Homework at query time problem: {}", problems::homework_at_given_time::busy_student(start_time, end_time, 4));
 
     let arr: Vec<i32> = vec![1, 2, 2, 1, 1, 3];
-    println!("Unique number of occurances: {}", problems::unique_number_of_occurances::unique_occurrences(arr))
+    println!("Unique number of occurances: {}", problems::unique_number_of_occurances::unique_occurrences(arr));
+
+    let tiles: String = "AAB".to_string();
+    println!("Letter tile possibilities: {}", problems::letter_tile_possibilties::num_tile_possibilities(tiles));
+
+    let search_nums: Vec<i32> = vec![1, 3, 5, 6];
+    let target: i32 = 0;
+    println!("Search insert position: {}", problems::search_insert_position::search_insert(search_nums, target));
+
+    println!("Simple is subsequence: {}", problems::simple_is_subsequence::is_subsequence("abc".to_string(), "abcde".to_string()));
+
 }

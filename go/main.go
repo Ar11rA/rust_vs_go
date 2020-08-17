@@ -33,4 +33,15 @@ func main() {
 
 	arr := []int{1, 2, 2, 1, 1, 3}
 	log.Println("Unique number of occurances", problems.UniqueOccurrences(arr))
+
+	title := "AAB"
+	log.Println("Letter tile possibilties", problems.NumTilePossibilities(title))
+
+	searchNums := []int{1, 3, 5, 6}
+	target := 0
+	log.Println("Search insert position", problems.SearchInsert(searchNums, target))
+
+	s := "ace"
+	t := "abcde"
+	log.Println("Is subsequence problem", problems.IsSubsequence(s, t))
 }
