@@ -44,4 +44,11 @@ func main() {
 	s := "ace"
 	t := "abcde"
 	log.Println("Is subsequence problem", problems.IsSubsequence(s, t))
+
+	nums1 := []int{1, 3, 5}
+	nums2 := []int{2, 5, 6}
+	log.Println("Merge two sorted arrays", problems.Merge(nums1, 3, nums2, 3))
+
+	nums3 := []int{1, 2, 3, 4, 5}
+	log.Println("Rotate Array", problems.Rotate(nums3, 2))
 }

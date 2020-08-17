@@ -41,4 +41,10 @@ fn main() {
 
     println!("Simple is subsequence: {}", problems::simple_is_subsequence::is_subsequence("abc".to_string(), "abcde".to_string()));
 
+    let mut nums1: Vec<i32> = vec![1, 3, 5];
+    let mut nums2: Vec<i32> = vec![1, 2, 4];
+    println!("Merge array problem {:?}", problems::merge_sorted_arrays::merge(&mut nums1, 3, &mut nums2, 3));
+
+    let nums3: Vec<i32> = vec![1, 2, 3, 4, 5];
+    println!("Rotate Array problem {:?}", problems::rotate_array::rotate(nums3, 2));
 }
