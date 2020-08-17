@@ -1,5 +1,6 @@
 use std::rc::Rc;
 use std::cell::RefCell;
+use crate::problems::subrectangle_queries::Query;
 
 mod problems;
 
@@ -47,4 +48,10 @@ fn main() {
 
     let nums3: Vec<i32> = vec![1, 2, 3, 4, 5];
     println!("Rotate Array problem {:?}", problems::rotate_array::rotate(nums3, 2));
+
+    let rectangle = vec![vec![1,2], vec![3,4]];
+    let mut rect: problems::subrectangle_queries::SubrectangleQueries = problems::subrectangle_queries::Query::new(rectangle);
+    println!("Subrectangle before {:?}", rect);
+    r.update_subrectangle(0,0,1,1,5);
+    println!("Subrectangle after {:?}", rect);
 }

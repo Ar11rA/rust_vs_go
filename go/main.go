@@ -51,4 +51,10 @@ func main() {
 
 	nums3 := []int{1, 2, 3, 4, 5}
 	log.Println("Rotate Array", problems.Rotate(nums3, 2))
+
+    rectangle := problems.NewSubrectangle([][]int{{1,2}, {3,4}})
+	log.Println("Subrectangle before", rectangle)
+	rectangle.UpdateSubrectangle(0,0,1,1,5)
+	log.Println("Subrectangle after", rectangle)
+
 }

@@ -11,18 +11,19 @@ rust/src
 ├── main.rs
 └── problems
   ├── bst_range_sum.rs
-    ├── greatest_number_of_candies.rs
-    ├── homework_at_given_time.rs
-    ├── letter_tile_possibilties.rs
-    ├── merge_sorted_arrays.rs
-    ├── mod.rs
-    ├── product_minus_sum.rs
-    ├── rotate_array.rs
-    ├── running_sum_of_array.rs
-    ├── search_insert_position.rs
-    ├── shuffle_string.rs
-    ├── simple_is_subsequence.rs
-    └── unique_number_of_occurances.rs
+  ├── greatest_number_of_candies.rs
+  ├── homework_at_given_time.rs
+  ├── letter_tile_possibilties.rs
+  ├── merge_sorted_arrays.rs
+  ├── mod.rs
+  ├── product_minus_sum.rs
+  ├── rotate_array.rs
+  ├── running_sum_of_array.rs
+  ├── search_insert_position.rs
+  ├── shuffle_string.rs
+  ├── simple_is_subsequence.rs
+  ├── subrectangle_queries.rs
+  └── unique_number_of_occurances.rs
 ```
 
 ### Go
@@ -31,7 +32,7 @@ rust/src
 go
 ├── main.go
 └── problems
-    ├── bst_range_sum.go
+    |── bst_range_sum.go
     ├── greatest_number_of_candies.go
     ├── homework_at_given_time.go
     ├── letter_tile_possibilties.go
@@ -42,5 +43,8 @@ go
     ├── search_insert_position.go
     ├── shuffle_string.go
     ├── simple_is_subsequence.go
+    ├── subrectangle_queries.go
     └── unique_number_of_occurances.go
 ```
+
+You can find the question link as a comment in each of the above files.
