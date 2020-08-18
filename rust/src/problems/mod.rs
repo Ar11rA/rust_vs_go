@@ -11,3 +11,4 @@ pub mod simple_is_subsequence;
 pub mod merge_sorted_arrays;
 pub mod rotate_array;
 pub mod subrectangle_queries;
+pub mod find_and_replace_pattern;

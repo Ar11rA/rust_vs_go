@@ -52,6 +52,9 @@ fn main() {
     let rectangle = vec![vec![1,2], vec![3,4]];
     let mut rect: problems::subrectangle_queries::SubrectangleQueries = problems::subrectangle_queries::Query::new(rectangle);
     println!("Subrectangle before {:?}", rect);
-    r.update_subrectangle(0,0,1,1,5);
+    rect.update_subrectangle(0,0,1,1,5);
     println!("Subrectangle after {:?}", rect);
+
+    let strings: Vec<String> = vec!["abc".to_string(),"deq".to_string(),"mee".to_string(),"aqq".to_string(),"dkd".to_string(),"ccc".to_string()];
+    println!("Find and replace pattern problem {:?}", problems::find_and_replace_pattern::find_and_replace_pattern(strings, "bqq".to_string()));
 }
