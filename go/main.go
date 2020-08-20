@@ -72,4 +72,6 @@ func main() {
 	log.Println("Cashier problem run 4", cashier.GetBill([]int{4}, []int{10}))
 
 	log.Println("Custom sort string", problems.Sort("cba", "abcd"))
+
+	log.Println("Seacrh suggestions system", problems.SuggestedProducts([]string{"cba", "cbad"}, "cb"))
 }

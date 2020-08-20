@@ -5,7 +5,7 @@ func BusyStudent(startTime []int, endTime []int, queryTime int) int {
 	result := 0
 	for i, v := range startTime {
 		if v <= queryTime && queryTime <= endTime[i] {
-			result+= 1
+			result += 1
 		}
 	}
 	return result

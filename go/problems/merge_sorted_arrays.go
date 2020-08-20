@@ -5,14 +5,14 @@ func Merge(nums1 []int, m int, nums2 []int, n int) []int {
 	var result []int
 	ctr1 := 0
 	ctr2 := 0
-	for i := 0; i < m + n; i++ {
+	for i := 0; i < m+n; i++ {
 		if ctr1 == m {
-			result = append(result, nums2[ctr2:] ...)
+			result = append(result, nums2[ctr2:]...)
 			break
 		}
 
 		if ctr2 == n {
-			result = append(result, nums1[ctr1:] ...)
+			result = append(result, nums1[ctr1:]...)
 			break
 		}
 

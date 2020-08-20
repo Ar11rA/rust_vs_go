@@ -6,7 +6,7 @@ func SingleNumberFind(nums []int) int {
 	frequency := make(map[int]int)
 
 	for _, value := range nums {
-		if _,ok := frequency[value];!ok {
+		if _, ok := frequency[value]; !ok {
 			frequency[value] = 1
 		} else {
 			frequency[value] += 1
@@ -26,7 +26,7 @@ func SingleNumberFilter(nums []int) []int {
 	frequency := make(map[int]int)
 	var results []int
 	for _, value := range nums {
-		if _,ok := frequency[value];!ok {
+		if _, ok := frequency[value]; !ok {
 			frequency[value] = 1
 		} else {
 			frequency[value] += 1

@@ -2,19 +2,19 @@ package problems
 
 // https://leetcode.com/problems/apply-discount-every-n-orders/
 type Cashier struct {
-	threshold int
+	threshold       int
 	ordersProcessed int
-	discount int
-	products []int
-	prices []int
+	discount        int
+	products        []int
+	prices          []int
 }
 
 func Constructor(n int, discount int, products []int, prices []int) Cashier {
 	return Cashier{
-		threshold: n,
-		discount: discount,
-		products: products,
-		prices: prices,
+		threshold:       n,
+		discount:        discount,
+		products:        products,
+		prices:          prices,
 		ordersProcessed: 1,
 	}
 }
@@ -32,7 +32,7 @@ func (c *Cashier) GetBill(product []int, amount []int) float64 {
 		productIndex := productIndicesMap[prod]
 		bill += float64(c.prices[productIndex] * amount[index])
 	}
-	if c.ordersProcessed % c.threshold == 0 {
+	if c.ordersProcessed%c.threshold == 0 {
 		bill -= (float64(c.discount) * bill) / 100.0
 	}
 	c.ordersProcessed += 1
