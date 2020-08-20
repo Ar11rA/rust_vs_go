@@ -70,4 +70,6 @@ func main() {
 	log.Println("Cashier problem run 2", cashier.GetBill([]int{3, 7}, []int{10, 10}))
 	log.Println("Cashier problem run 3", cashier.GetBill([]int{1, 2, 3, 4, 5, 6, 7}, []int{1, 1, 1, 1, 1, 1, 1}))
 	log.Println("Cashier problem run 4", cashier.GetBill([]int{4}, []int{10}))
+
+	log.Println("Custom sort string", problems.Sort("cba", "abcd"))
 }

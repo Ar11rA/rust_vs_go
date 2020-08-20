@@ -1,5 +1,6 @@
 package problems
 
+// https://leetcode.com/problems/apply-discount-every-n-orders/
 type Cashier struct {
 	threshold int
 	ordersProcessed int
@@ -7,7 +8,6 @@ type Cashier struct {
 	products []int
 	prices []int
 }
-
 
 func Constructor(n int, discount int, products []int, prices []int) Cashier {
 	return Cashier{
@@ -18,7 +18,6 @@ func Constructor(n int, discount int, products []int, prices []int) Cashier {
 		ordersProcessed: 1,
 	}
 }
-
 
 func (c *Cashier) GetBill(product []int, amount []int) float64 {
 	if len(product) != len(amount) {

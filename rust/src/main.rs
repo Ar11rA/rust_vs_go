@@ -68,4 +68,6 @@ fn main() {
     println!("Cashier problem run 2 {}", cashier.get_bill(vec![3, 7], vec![10, 10]));
     println!("Cashier problem run 3 {}", cashier.get_bill(vec![1, 2, 3, 4, 5, 6, 7], vec![1, 1, 1, 1, 1, 1, 1]));
     println!("Cashier problem run 4 {}", cashier.get_bill(vec![4], vec![1]));
+
+    println!("Custom sort problem {}", problems::custom_sort_string::sort("cba".to_string(), "abcd".to_string()))
 }

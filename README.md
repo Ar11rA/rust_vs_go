@@ -14,6 +14,7 @@ rust/src
 └── problems
     ├── apply_discount_every_n_orders.rs
     ├── bst_range_sum.rs
+    ├── custom_sort_string.rs
     ├── find_and_replace_pattern.rs
     ├── greatest_number_of_candies.rs
     ├── homework_at_given_time.rs
@@ -39,6 +40,7 @@ go
 └── problems
     ├── apply_discount_every_n_orders.go
     ├── bst_range_sum.go
+    ├── custom_sort_string.go
     ├── find_and_replace_pattern.go
     ├── greatest_number_of_candies.go
     ├── homework_at_given_time.go
