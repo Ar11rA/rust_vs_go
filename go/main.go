@@ -61,4 +61,8 @@ func main() {
 	pattern := "abb"
 	log.Println("Find and replace pattern", problems.FindAndReplacePattern(words, pattern))
 
+	nums4 := []int{2, 1, 2, 1, 2, 1, 99}
+	log.Println("Single number problem 1", problems.SingleNumberFind(nums4))
+	log.Println("Single number problem 2", problems.SingleNumberFilter(nums4))
+
 }
