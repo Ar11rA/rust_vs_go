@@ -4,7 +4,7 @@ package problems
 // https://leetcode.com/problems/single-number-i/
 func SingleNumberFind(nums []int) int {
 	frequency := make(map[int]int)
-	
+
 	for _, value := range nums {
 		if _,ok := frequency[value];!ok {
 			frequency[value] = 1

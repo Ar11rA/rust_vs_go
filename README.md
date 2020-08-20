@@ -12,6 +12,7 @@ Here is the list of problems, links can be found inside the respective files.
 rust/src
 ├── main.rs
 └── problems
+    ├── apply_discount_every_n_orders.rs
     ├── bst_range_sum.rs
     ├── find_and_replace_pattern.rs
     ├── greatest_number_of_candies.rs
@@ -36,6 +37,7 @@ rust/src
 go
 ├── main.go
 └── problems
+    ├── apply_discount_every_n_orders.go
     ├── bst_range_sum.go
     ├── find_and_replace_pattern.go
     ├── greatest_number_of_candies.go
@@ -52,5 +54,3 @@ go
     ├── subrectangle_queries.go
     └── unique_number_of_occurances.go
 ```
-
-You can find the question link as a comment in each of the above files.

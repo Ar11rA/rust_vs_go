@@ -65,4 +65,9 @@ func main() {
 	log.Println("Single number problem 1", problems.SingleNumberFind(nums4))
 	log.Println("Single number problem 2", problems.SingleNumberFilter(nums4))
 
+	cashier := problems.Constructor(3, 50, []int{1, 2, 3, 4, 5, 6, 7}, []int{100, 200, 300, 400, 300, 200, 100})
+	log.Println("Cashier problem run 1", cashier.GetBill([]int{1, 2}, []int{1, 2}))
+	log.Println("Cashier problem run 2", cashier.GetBill([]int{3, 7}, []int{10, 10}))
+	log.Println("Cashier problem run 3", cashier.GetBill([]int{1, 2, 3, 4, 5, 6, 7}, []int{1, 1, 1, 1, 1, 1, 1}))
+	log.Println("Cashier problem run 4", cashier.GetBill([]int{4}, []int{10}))
 }

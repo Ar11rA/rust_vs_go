@@ -13,3 +13,4 @@ pub mod rotate_array;
 pub mod subrectangle_queries;
 pub mod find_and_replace_pattern;
 pub mod single_number;
+pub mod apply_discount_every_n_orders;

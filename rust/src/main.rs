@@ -1,6 +1,7 @@
 use std::rc::Rc;
 use std::cell::RefCell;
 use crate::problems::subrectangle_queries::Query;
+use crate::problems::apply_discount_every_n_orders::{Employee, Cashier};
 
 mod problems;
 
@@ -60,4 +61,11 @@ fn main() {
 
     println!("Single number problem 1 {}", problems::single_number::find(vec![0, 1, 0, 1, 0, 1, 99]));
     println!("Single number problem 2 {:?}", problems::single_number::filter(vec![0, 1, 0, 1, 0, 1, 99]));
+
+    let mut cashier: Cashier = problems::apply_discount_every_n_orders::Employee::new(
+        3, 50, vec![1, 2, 3, 4, 5, 6, 7], vec![100, 200, 300, 400, 300, 200, 100]);
+    println!("Cashier problem run 1 {}", cashier.get_bill(vec![1, 2], vec![1, 2]));
+    println!("Cashier problem run 2 {}", cashier.get_bill(vec![3, 7], vec![10, 10]));
+    println!("Cashier problem run 3 {}", cashier.get_bill(vec![1, 2, 3, 4, 5, 6, 7], vec![1, 1, 1, 1, 1, 1, 1]));
+    println!("Cashier problem run 4 {}", cashier.get_bill(vec![4], vec![1]));
 }
