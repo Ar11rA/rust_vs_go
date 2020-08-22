@@ -74,4 +74,6 @@ func main() {
 	log.Println("Custom sort string", problems.Sort("cba", "abcd"))
 
 	log.Println("Seacrh suggestions system", problems.SuggestedProducts([]string{"cba", "cbad"}, "cb"))
+
+	log.Println("Remove invalid parenthesis", problems.MinRemoveToMakeValid("())(()"))
 }
