@@ -17,3 +17,5 @@ pub mod single_number;
 pub mod subrectangle_queries;
 pub mod unique_number_of_occurances;
 pub mod remove_invalid_parenthesis;
+pub mod binary_watch;
+pub mod letter_combinations;

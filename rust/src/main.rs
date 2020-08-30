@@ -165,4 +165,10 @@ fn main() {
        "())(()".to_string()
      )
   );
+
+  println!("Binary watch problem {:?}", problems::binary_watch::get_hours(2));
+
+  println!("Letter combinations {:?}",
+     problems::letter_combinations::get_combinations("23".to_string())
+  );
 }

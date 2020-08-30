@@ -76,4 +76,8 @@ func main() {
 	log.Println("Seacrh suggestions system", problems.SuggestedProducts([]string{"cba", "cbad"}, "cb"))
 
 	log.Println("Remove invalid parenthesis", problems.MinRemoveToMakeValid("())(()"))
+
+	log.Println("Binary watch problem", problems.GetHours(2))
+
+	log.Println("Letter combination problem", problems.LetterCombinations("243"))
 }
