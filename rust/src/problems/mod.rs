@@ -19,3 +19,5 @@ pub mod unique_number_of_occurances;
 pub mod remove_invalid_parenthesis;
 pub mod binary_watch;
 pub mod letter_combinations;
+pub mod max_product_two_items;
+pub mod generate_parenthesis;

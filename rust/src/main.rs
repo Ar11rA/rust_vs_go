@@ -157,18 +157,24 @@ fn main() {
     )
   );
 
-  println!("Remove invalid parenthesis {} {}",
-     problems::remove_invalid_parenthesis::min_remove_to_make_valid(
-       "lee(t(c)ode)".to_string()
-     ),
-     problems::remove_invalid_parenthesis::min_remove_to_make_valid(
-       "())(()".to_string()
-     )
+  println!("Remove invalid parenthesis {} {}", problems::remove_invalid_parenthesis::min_remove_to_make_valid(
+    "lee(t(c)ode)".to_string()
+  ), problems::remove_invalid_parenthesis::min_remove_to_make_valid(
+    "())(()".to_string()
+  )
   );
 
   println!("Binary watch problem {:?}", problems::binary_watch::get_hours(2));
 
   println!("Letter combinations {:?}",
-     problems::letter_combinations::get_combinations("23".to_string())
+           problems::letter_combinations::get_combinations("23".to_string())
+  );
+
+  println!("Maximum Product of Two Elements {}",
+           problems::max_product_two_items::max_product(vec![3, 4, 5, 2])
+  );
+
+  println!("Generate Parenthesis {:?}",
+           problems::generate_parenthesis::generate_parenthesis(3)
   );
 }
