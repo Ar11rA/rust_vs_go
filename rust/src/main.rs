@@ -177,4 +177,31 @@ fn main() {
   println!("Generate Parenthesis {:?}",
            problems::generate_parenthesis::generate_parenthesis(3)
   );
+
+  println!("Simplified Fractions {:?}",
+           problems::simplified_fractions::simplified_fractions(4)
+  );
+
+  println!("Vegan Friendly Restaurants {:?}",
+           problems::filter_vegan_friendly::filter_restaurants(
+             vec![
+               vec![1,4,1,40,10],
+               vec![2,8,0,50,5],
+               vec![3,8,1,30,4],
+               vec![4,10,0,10,3],
+               vec![5,1,1,15,1]
+             ],
+             0, 30, 3
+           )
+  );
+
+  println!("Reorder logs {:?}", problems::reorder_logs::reorder_log_files(
+    vec![
+      "dig1 8 1 5 1".to_string(),
+      "let1 art can".to_string(),
+      "dig2 3 6".to_string(),
+      "let2 own kit dig".to_string(),
+      "let3 art zero".to_string()
+    ]
+  ))
 }

@@ -42,8 +42,6 @@ rust/src
 go
 ├── main.go
 └── problems
-    ├── apply_discount_every_n_orders.go
-    ├── binary_watch.go
     ├── bst_range_sum.go
     ├── custom_sort_string.go
     ├── find_and_replace_pattern.go

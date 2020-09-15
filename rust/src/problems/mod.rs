@@ -21,3 +21,7 @@ pub mod binary_watch;
 pub mod letter_combinations;
 pub mod max_product_two_items;
 pub mod generate_parenthesis;
+pub mod simplified_fractions;
+pub mod trie_prefix_tree;
+pub mod filter_vegan_friendly;
+pub mod reorder_logs;

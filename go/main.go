@@ -85,4 +85,14 @@ func main() {
   log.Println("Product of 2 largest problem", problems.MaxProduct([]int{2, 4, 5, 3}))
 
   log.Println("Generate parenthesis problem", problems.GenerateParenthesis(3))
+
+  log.Println("Simplified fractions problem", problems.SimplifiedFractions(4))
+
+  log.Println("Trie prefix tree problem")
+  trie := problems.NewTrie()
+  trie.Insert("yoda")
+  trie.Insert("yoma")
+  trie.Insert("yo")
+  log.Println(trie)
+
 }
