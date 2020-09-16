@@ -203,5 +203,9 @@ fn main() {
       "let2 own kit dig".to_string(),
       "let3 art zero".to_string()
     ]
-  ))
+  ));
+
+  println!("Reverse only letters {}", problems::reverse_only_letters::reverse_only_letters(
+    "a-bC-dEf-ghIj".to_string()
+  ));
 }

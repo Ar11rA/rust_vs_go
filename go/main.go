@@ -93,6 +93,13 @@ func main() {
   trie.Insert("yoda")
   trie.Insert("yoma")
   trie.Insert("yo")
-  log.Println(trie)
+
+  log.Println("Filter vegan")
+  log.Println("Reorder logs")
+  log.Println("Reverse only letters")
+  log.Println("Detect capital", problems.DetectCapitalUse("USA"))
+  log.Println("Detect capital", problems.DetectCapitalUse("Usa"))
+  log.Println("Detect capital", problems.DetectCapitalUse("uSa"))
+  log.Println("Detect capital", problems.DetectCapitalUse("usa"))
 
 }

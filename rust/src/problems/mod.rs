@@ -25,3 +25,5 @@ pub mod simplified_fractions;
 pub mod trie_prefix_tree;
 pub mod filter_vegan_friendly;
 pub mod reorder_logs;
+pub mod reverse_only_letters;
+pub mod detect_capital;
