@@ -208,4 +208,18 @@ fn main() {
   println!("Reverse only letters {}", problems::reverse_only_letters::reverse_only_letters(
     "a-bC-dEf-ghIj".to_string()
   ));
+
+  println!("Detect caps {}", problems::detect_capital::detect_capital_use("USA".to_string()));
+
+  let tree = Some(Rc::new(RefCell::new(problems::path_sum::TreeNode {
+    val: 5,
+    left: Some(Rc::new(RefCell::new(problems::path_sum::TreeNode {
+      val: 6,
+      left: None,
+      right: None
+    }))),
+    right: None,
+  })));
+  println!("Is path sum possible {}", problems::path_sum::has_path_sum(tree.clone(), 11));
+  println!("Is path sum possible {}", problems::path_sum::has_path_sum(tree.clone(), 12));
 }

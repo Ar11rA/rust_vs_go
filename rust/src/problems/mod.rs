@@ -27,3 +27,4 @@ pub mod filter_vegan_friendly;
 pub mod reorder_logs;
 pub mod reverse_only_letters;
 pub mod detect_capital;
+pub mod path_sum;

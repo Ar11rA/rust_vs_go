@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/detect-capital
-fn detect_capital_use(word: String) -> bool {
+pub fn detect_capital_use(word: String) -> bool {
   return word
     .chars()
     .all(|x| x.is_uppercase())
@@ -7,4 +7,4 @@ fn detect_capital_use(word: String) -> bool {
     .chars()
     .skip(1)
     .all(|x| x.is_lowercase());
-} 
+}
